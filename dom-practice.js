@@ -16,3 +16,23 @@ let p2 = document.createElement('p');
 p2.textContent = "ME TOO!";
 content.appendChild(h1);
 content.appendChild(p2);
+
+function alertFunction() {
+    alert('Yay! you did it!');
+}
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
+let blu = 'white';
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', function (e) {
+    e.target.style.background = blu;
+}
+);
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    })
+}
+)
